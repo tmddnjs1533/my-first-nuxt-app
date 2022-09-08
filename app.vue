@@ -1,6 +1,13 @@
+<script setup>
+/**
+ * app.config.ts
+ */
+const config = useAppConfig();
+</script>
 <template>
   <div>
-    Hello World!!!!!!!!!!!!
-<!--    -->
+    <h1>{{config.title}}</h1>
+    <p>{{config.description}}</p>
   </div>
 </template>
+
