@@ -2,10 +2,14 @@
 /**
  * app.config.ts
  */
+import {useAppConfig} from "#app";
+
 const appConfig = useAppConfig();
 
 </script>
-<script>
+<script lang="ts">
+import {definePageMeta} from "#imports";
+
 definePageMeta({
   layout: 'default'
 })
