@@ -5,7 +5,14 @@
   <slot />
 </div>
 </template>
-
+<script setup>
+  useHead({
+    title:"Other",
+    titleTemplate: (titleChunk) => {
+      return titleChunk ? `Nuxt app - ${titleChunk}` : '??';
+    }
+  })
+</script>
 <script>
 export default {
   name: "other"
